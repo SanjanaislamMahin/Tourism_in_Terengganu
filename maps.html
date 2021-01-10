@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tour Terengganu</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+    <style>
+              body {
+      margin: 0;
+      background: black;
+      font-family: sans-serif;
+      font-weight: 300;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      width: 80%;
+    }
+
+    header::after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    .logo{
+      float: left;
+      padding: 10px 0;
+    }
+
+    nav {
+      float: right;
+      padding-bottom: 10px;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-left: 40px;
+      padding-top: 25px;
+
+      position: relative;
+    }
+
+    nav a {
+      color: lightgrey;
+      text-decoration:  none;
+      text-transform:  uppercase;
+    }
+
+    nav a:hover {
+      color: black;
+    }
+
+    nav a::before {
+      content: '';
+      display: block;
+      height: 5px;
+      width: 0%;
+      background-color: black;
+      position: absolute;
+      top: 0;
+      transition: all ease-in-out 150ms;
+    }
+
+    nav a:hover::before {
+      width: 100%;
+    }
+    .header{
+
+height: 300px;
+background-image: url("tg_image/cover3.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 45%;
+  padding: 10px;
+ margin: 10px;
+ background-color:rgb(255, 255, 255);
+  border-radius: 5px;
+}
+.column:hover{
+    background-color: rgb(166, 190, 226);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 45%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 55%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+.card:hover{
+    background-color: rgb(166, 190, 226);
+}
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <header>
+        <div class="container">
+           <img src="tg_image/logo.png" width="200px" alt="logo" class="logo">
+          <nav>
+            <ul>
+
+              <li><a href="Home.html">Home</a></li>
+              <li> <div class="dropdown">
+                 <a href="Explore Terengganu.html" class="dropbtn">Explore Terengganu<img style="margin-top: 20px;" src="tg_image/arrow.ico" alt="">  </a>
+              <div  class="dropdown-content">
+                   <a href="10 Popular Places.html">10 Popular Places</a>
+                   <a href="Recreational.html">Recreational</a>
+                   <a href="FoodFiesta.html">Food Fiesta</a>
+                   <a href="Art and Architecture.html">Art and Architecture</a>
+                 </div>
+               </div> </li>
+              <li><div class="dropdown">
+                 <a href="Accomodation.html" class="dropbtn">Accomodation<img style="margin-top: 20px;" src="tg_image/arrow.ico" alt="">  </a>
+              <div  class="dropdown-content">
+                   <a href="Budget.html">Budget</a>
+                   <a href="Standard.html">Standard</a>
+                   <a href="Premium.html">Premium</a>
+                 </div>
+               </div></li>
+             <li> <div class="dropdown">
+                <a href="Tips_and_Guide.html" class="dropbtn">Tips and Guide <img style="margin-top: 20px;" src="tg_image/arrow.ico" alt="">  </a>
+             <div  class="dropdown-content">
+                  <a href="Transportation.html">Transportation</a>
+                  <a href="Maps.html">Maps</a>
+                </div>
+              </div> </li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="header"> <div>
+        <h1 style="color: black;">LOCATE US</h1>
+       </div></div>
+
+
+        <h3 style="height: 80px; padding-top: 30px; background-color: white; color: #32799B; text-align: center">Maps where your fixed destination can be easily found
+        </h3>
+        <hr>
+        <div ><iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Kuala%20terenganu&t=&z=9&ie=UTF8&iwloc=&output=embed" title="Map"></iframe></div>
+
+
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card" style="border-radius: 20px;">
+          <img src="tg_image/batuburuk.jpg" alt="" height="200px" width="100%">
+         <div style="text-align: center;"> <h3>Pantai Batu Buruk</h3>
+          <span><img src="tg_image/star.ico" alt=""></span>
+          <span><img src="tg_image/star.ico" alt=""></span>
+          <span><img src="tg_image/star.ico" alt=""></span>
+          <span><img src="tg_image/star.ico" alt=""></span>
+          <span><img src="tg_image/star-16.ico" alt=""> (367)</span></div>
+
+
+
+      </div>
+      <div class="card" style="border-radius: 20px;">
+        <img src="tg_image/chinatown.jpg" alt="" height="200px" width="100%">
+       <div style="text-align: center;"> <h3>China Town, Kuala Terengganu</h3>
+        <span><img src="tg_image/star.ico" alt=""></span>
+        <span><img src="tg_image/star.ico" alt=""></span>
+        <span><img src="tg_image/star.ico" alt=""></span>
+        <span><img src="tg_image/star.ico" alt=""></span>
+        <span><img src="tg_image/star-16.ico" alt=""> (255)</span></div>
+
+
+
+    </div>
+
+
+    </div>
+
+    <div class="rightcolumn">
+      <div class="card" style="background-color: inherit;">
+        <div class="row">
+            <div class="column" >
+                <img src="tg_image/masjid.jpg" alt="" width="100%">
+                <div style="text-align: center;"> <h3>Masjid Terapung Kuala Ibai</h3>
+                 <span><img src="tg_image/star.ico" alt=""></span>
+                 <span><img src="tg_image/star.ico" alt=""></span>
+                 <span><img src="tg_image/star.ico" alt=""></span>
+                 <span><img src="tg_image/star.ico" alt=""></span>
+                 <span><img src="tg_image/star.ico" alt=""> (355)</span>
+            </div>
+            </div>
+            <div class="column" >
+                <img src="tg_image/istana.jpg" alt="" width="100%">
+                <div style="text-align: center;"> <h3>Istana Maziah, Kuala Terengganu</h3>
+                 <span><img src="tg_image/star.ico" alt=""></span>
+                 <span><img src="tg_image/star.ico" alt=""></span>
+                 <span><img src="tg_image/star.ico" alt=""></span>
+                 <span><img src="tg_image/star.ico" alt=""></span>
+                 <span><img src="tg_image/star-16.ico" alt=""> (178)</span>
+            </div>
+            </div>
+
+            </div>
+            <div class="row">
+                <div class="column" >
+                    <img src="tg_image/Redang_Sea_Beach.jpg" alt="" width="100%">
+                    <div style="text-align: center;"> <h3>Pulau Redang, Terengganu</h3>
+                     <span><img src="tg_image/star.ico" alt=""></span>
+                     <span><img src="tg_image/star.ico" alt=""></span>
+                     <span><img src="tg_image/star.ico" alt=""></span>
+                     <span><img src="tg_image/star-16.ico" alt=""></span>
+                     <span><img src="tg_image/star-16.ico" alt=""> (188)</span>
+                </div>
+                </div>
+                <div class="column" >
+                    <img src="tg_image/crystal.jpg" alt="" width="100%">
+                    <div style="text-align: center;"> <h3>Crystal Mosque, Kuala Terengganu</h3>
+                     <span><img src="tg_image/star.ico" alt=""></span>
+                     <span><img src="tg_image/star.ico" alt=""></span>
+                     <span><img src="tg_image/star.ico" alt=""></span>
+                     <span><img src="tg_image/star.ico" alt=""></span>
+                     <span><img src="tg_image/star.ico" alt=""> (424)</span>
+                </div>
+                </div>
+
+                </div>
+          </div>
+    </div>
+</div>
+
+
+   <div class="footer" style="padding-bottom:40px; height: no; margin-top:50px">
+    <p>© 2020 To minimise comments, this site uses
+        Reducing the cost.Learn how to find your destination
+         with your budget with following process .</p>
+       </div>
+    </div>
+
+    </body>
+</html>

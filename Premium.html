@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tour Terengganu</title>
+    <style media="screen">
+    body {
+      margin: 0;
+      background: White;
+      font-family: sans-serif;
+      font-weight: 300;
+    }
+    h2{
+      margin-left: 15px;
+    }
+    p{
+      margin-left: 15px;
+    }
+    .title{
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("accomodation_image/header3.jpg");
+      height: 340px;
+      max-width: 100%;
+      font-size: 40px;
+      text-align: center;
+      color: white;
+      padding-top: 100px;
+      background-size: cover;
+    }
+    .layout1{
+      height: 300px;
+      display: flex;
+      padding: 20px;
+    }
+    .img{
+      height: 300px;
+      width: 400px;
+      overflow: hidden;
+      object-fit: cover;
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+
+    /* visited link */
+    h2 a:visited {
+      color: black;
+    }
+
+    /* mouse over link */
+    h2 a:hover {
+      color: lightgrey;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      width: 100%;
+    }
+
+    header::after{
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    .logo{
+      float: left;
+      padding: 10px 0;
+    }
+
+    nav {
+      float: right;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-left: 40px;
+      padding-top: 25px;
+
+      position: relative;
+    }
+
+    nav a {
+      color: lightgrey;
+      text-decoration:  none;
+      text-transform:  uppercase;
+    }
+
+    nav a:hover {
+      color: lightgrey;
+    }
+
+    nav a::before {
+      content: '';
+      display: block;
+      height: 5px;
+      width: 0%;
+      background-color: lightgrey;
+      position: absolute;
+      top: 0;
+      transition: all ease-in-out 150ms;
+    }
+
+    nav a:hover::before {
+      width: 100%;
+    }
+
+    .dropbtn {
+
+        text-decoration: none;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgba(0,0,0,0.5);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin-top: 7px;
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {background-color: black;
+    color:white;}
+
+    .dropdown-content a:hover::before{
+      width: 0%;
+    }
+
+      .dropdown:hover .dropdown-content {display: block;}
+      .layout1 a {
+        color: black;
+      }
+      #black {
+        background-color: rgba(0,0,0,0.9);
+      }
+      #black a, #black p{
+        color: white;
+      }
+      #black a:hover{
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="container">
+           <img src="accomodation_image/logo.png" width="200px" alt="logo" class="logo">
+          <nav>
+            <ul>
+
+              <li><a href="Home.html">Home</a></li>
+              <li> <div class="dropdown">
+                 <a href="Explore Terengganu.html" class="dropbtn">Explore Terengganu<img style="margin-top: 20px;" src="arrow.ico" alt="">  </a>
+              <div  class="dropdown-content">
+                   <a href="10 Popular Places.html">10 Popular Places</a>
+                   <a href="Recreational.html">Recreational</a>
+                   <a href="FoodFiesta.html">Food Fiesta</a>
+                   <a href="Art and Architecture.html">Art and Architecture</a>
+                 </div>
+               </div> </li>
+              <li><div class="dropdown">
+                 <a href="Accomodation.html" class="dropbtn">Accomodation<img style="margin-top: 20px;" src="arrow.ico" alt="">  </a>
+              <div  class="dropdown-content">
+                   <a href="Budget.html">Budget</a>
+                   <a href="Standard.html">Standard</a>
+                   <a href="Premium.html">Premium</a>
+                 </div>
+               </div></li>
+             <li> <div class="dropdown">
+                <a href="Tips_and_Guide.html" class="dropbtn">Tips and Guide <img style="margin-top: 20px;" src="arrow.ico" alt="">  </a>
+             <div  class="dropdown-content">
+                  <a href="Transportation.html">Transportation</a>
+                  <a href="Maps.html">Maps</a>
+                </div>
+              </div> </li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="title">
+      <h1> Premium Class </h1>
+    </div>
+    <section class="layout1">
+      <div>
+        <img src="accomodation_image/Paya.jpg" class="img">
+      </div>
+      <div>
+        <h2><a href="https://www.google.com/travel/hotels/entity/CgsInay95Jm74NjpARAB/overview?g2lb=2502548%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4328159%2C4371335%2C4401769%2C4419364%2C4428793%2C4429192%2C4463263%2C4463666%2C4464463%2C4482194%2C4270859%2C4284970%2C4291517&hl=en-MY&gl=my&un=1&rp=EJ2sveSZu-DY6QEQnay95Jm74NjpATgCQABIAcABAg&ictx=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&hrf=IgNNWVIqFgoHCOUPEAEYBRIHCOUPEAEYBhgBKACCASUweDMxYjdiZjRkN2MyYzNkNjc6MHhlOWIxODFkOTljOGY1NjFkmgEnGiUweDMxYjdiZjRkN2MyYzNkNjc6MHhlOWIxODFkOTljOGY1NjFk"style="text-decoration: none;" >Paya Bunga Hotel Terengganu</a></h2>
+        <p>Jalan Tengku Embong Fatimah, 20200 Kuala Terengganu, Terengganu</p><p>•09-600 6666 </p>
+      </div>
+    </section>
+    <section id="black" class="layout1">
+      <div>
+        <img src="accomodation_image/Raia.jpeg" class="img">
+      </div>
+      <div>
+        <h2><a href="https://www.google.com/travel/hotels/entity/CgsI37zryoDukMDXARAB/overview?g2lb=2502548%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4328159%2C4371335%2C4401769%2C4419364%2C4428793%2C4429192%2C4463263%2C4463666%2C4464463%2C4482194%2C4270859%2C4284970%2C4291517&hl=en-MY&gl=my&un=1&rp=EN-868qA7pDA1wEQ37zryoDukMDXATgCQABIAcABAg&ictx=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&hrf=IgNNWVIqFgoHCOUPEAEYBBIHCOUPEAEYBRgBKACCASUweDMxYjdiYzVmOGEwNTViYjc6MHhkNzgwNDM3MDA5NWFkZTVmmgEnGiUweDMxYjdiYzVmOGEwNTViYjc6MHhkNzgwNDM3MDA5NWFkZTVm"style="text-decoration: none;" >Raia Hotel & Convention Centre Terengganu</a></h2>
+        <p>Jalan Lapangan Terbang, Kampung Telaga Batin, 21300 Kuala Terengganu, Terengganu •09-668 6666 </p>
+      </div>
+    </section>
+    <section class="layout1">
+      <div>
+        <img src="accomodation_image/Duyong.jpg" class="img">
+      </div>
+      <div>
+        <h2><a href="https://www.google.com/travel/hotels/entity/CgoI7JqWnMWvtexlEAE/overview?g2lb=2502548%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4328159%2C4371335%2C4401769%2C4419364%2C4428793%2C4429192%2C4463263%2C4463666%2C4464463%2C4482194%2C4270859%2C4284970%2C4291517&hl=en-MY&gl=my&un=1&rp=EOyalpzFr7XsZRDsmpacxa-17GU4AkAASAHAAQI&ictx=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&hrf=IgNNWVIqFgoHCOUPEAEYDRIHCOUPEAEYDhgBKACCASUweDMxYjdiZTgxMjdhZjg5Y2Y6MHg2NWQ4ZDU3YzUzODU4ZDZjmgEnGiUweDMxYjdiZTgxMjdhZjg5Y2Y6MHg2NWQ4ZDU3YzUzODU4ZDZj"style="text-decoration: none;" >Duyong Marina & Resort</a></h2>
+        <p>Pulau Duyong, 21300 Kuala Terengganu, Terengganu •09-627 7888</p>
+      </div>
+    </section>
+
+    <section id="black" class="layout1">
+      <div>
+        <img src="accomodation_image/grand.jpg" class="img">
+      </div>
+      <div>
+        <h2><a href="https://www.google.com/travel/hotels/Kuala%20Terengganu/entity/ChcIsKirqeDgnPFpGgsvZy8xdGp3ZjdqchAB?g2lb=2502548%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4328159%2C4371335%2C4401769%2C4419364%2C4428793%2C4429192%2C4463263%2C4463666%2C4464463%2C4482194%2C4270859%2C4284970%2C4291517&hl=en-MY&gl=my&un=1&ap=MAFahgEKBQjhARAAEgUIuwIQPCIDTVlSKhYKBwjlDxABGAQSBwjlDxABGAUYASgAsAEAWAFoAZoBHhIcS3VhbGEgVGVyZW5nZ2FudSwgVGVyZW5nZ2FudaIBHQoJL20vMDJ2bDBtEhBLdWFsYSBUZXJlbmdnYW51qgELCgMI4QISAghjGAGSAQIgAWgA&q=hotel%20kuala%20terengganu&rp=ogEcS3VhbGEgVGVyZW5nZ2FudSwgVGVyZW5nZ2FudTgBQABIAg&ictx=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&hrf=CgUI4QEQABIFCLsCEGgiA01ZUioWCgcI5Q8QARgEEgcI5Q8QARgFGAEoALABAFgBaAGaAR4SHEt1YWxhIFRlcmVuZ2dhbnUsIFRlcmVuZ2dhbnWiAR0KCS9tLzAydmwwbRIQS3VhbGEgVGVyZW5nZ2FudaoBCwoDCOECEgIIYxgBkgECIAE&ved=0CAAQ5JsGahcKEwjw3anM2vTtAhUAAAAAHQAAAAAQAg"style="text-decoration: none;" >Hotel Grand Continental Kuala Terengganu</a></h2>
+        <p>Lot 004023, Jalan Sultan Zainal Abidin, Kampung Tanjung Kapur, 20000 Kuala Terengganu, Terengganu•09-625 1888</p>
+      </div>
+    </section>
+
+    <section class="layout1">
+      <div>
+        <img src="accomodation_image/sutra.jpg" class="img">
+      </div>
+      <div>
+        <h2><a href="https://www.google.com/travel/hotels/Kuala%20Terengganu/entity/ChgIjrCym8zjobK6ARoLL2cvMXR6bHdmejgQAQ?g2lb=2502548%2C2503781%2C4258168%2C4270442%2C4306835%2C4317915%2C4328159%2C4371335%2C4401769%2C4419364%2C4428793%2C4429192%2C4463263%2C4463666%2C4464463%2C4482194%2C4270859%2C4284970%2C4291517&hl=en-MY&gl=my&un=1&ap=MAFahgEKBQjhARAAEgUIuwIQPCIDTVlSKhYKBwjlDxABGAQSBwjlDxABGAUYASgAsAEAWAFoAZoBHhIcS3VhbGEgVGVyZW5nZ2FudSwgVGVyZW5nZ2FudaIBHQoJL20vMDJ2bDBtEhBLdWFsYSBUZXJlbmdnYW51qgELCgMI4QISAghjGAGSAQIgAWgA&q=hotel%20kuala%20terengganu&rp=ogEcS3VhbGEgVGVyZW5nZ2FudSwgVGVyZW5nZ2FudTgBQABIAg&ictx=1&utm_campaign=sharing&utm_medium=link&utm_source=htls&hrf=CgUI4QEQABIFCLsCEGgiA01ZUioWCgcI5Q8QARgEEgcI5Q8QARgFGAEoALABAFgBaAGaAR4SHEt1YWxhIFRlcmVuZ2dhbnUsIFRlcmVuZ2dhbnWiAR0KCS9tLzAydmwwbRIQS3VhbGEgVGVyZW5nZ2FudaoBCwoDCOECEgIIYxgBkgECIAE&ved=0CAAQ5JsGahcKEwigvZiZ2_TtAhUAAAAAHQAAAAAQAg"style="text-decoration: none;" >Sutra Beach Resort Terengganu</a></h2>
+        <p>Kampung Rhu Tapai, Merang, Kampung Rhu Tapai, 21010 Setiu, Terengganu•09-653 1111</p>
+      </div>
+    </section>
+
+  </body>
+</html>

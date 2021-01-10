@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+    <link href="Contact.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tour Terengganu</title>
+  </head>
+  <body>
+
+    <div class="header-title">
+
+      <header>
+          <div class="container">
+             <img src="contact_image/logo.png" width="200px" alt="logo" class="logo">
+            <nav>
+              <ul>
+
+                <li><a href="Home.html">Home</a></li>
+                <li> <div class="dropdown">
+                   <a href="Explore Terengganu.html" class="dropbtn">Explore Terengganu<img style="margin-top: 20px;" src="arrow.ico" alt="">  </a>
+                <div  class="dropdown-content">
+                     <a href="10 Popular Places.html">10 Popular Places</a>
+                     <a href="Recreational.html">Recreational</a>
+                     <a href="FoodFiesta.html">Food Fiesta</a>
+                     <a href="Art and Architecture.html">Art and Architecture</a>
+                   </div>
+                 </div> </li>
+                <li><div class="dropdown">
+                   <a href="Accomodation.html" class="dropbtn">Accomodation<img style="margin-top: 20px;" src="arrow.ico" alt="">  </a>
+                <div  class="dropdown-content">
+                     <a href="Budget.html">Budget</a>
+                     <a href="Standard.html">Standard</a>
+                     <a href="Premium.html">Premium</a>
+                   </div>
+                 </div></li>
+               <li> <div class="dropdown">
+                  <a href="Tips_and_Guide.html" class="dropbtn">Tips and Guide <img style="margin-top: 20px;" src="arrow.ico" alt="">  </a>
+               <div  class="dropdown-content">
+                    <a href="Transportation.html">Transportation</a>
+                    <a href="Maps.html">Maps</a>
+                  </div>
+                </div> </li>
+                <li><a href="Contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+      <div class="title">
+        <h1>Contact</h1>
+      </div>
+
+    </div>
+
+    <div class="address">
+
+      <div class="header1">
+        <h3>Address</h3>
+      </div>
+
+      <div id="map"></div>
+
+      <script type="text/javascript">
+        function initMap(){
+          var location = {lat: 5.319650, lng: 103.132103};
+          var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 9,
+              center: location
+          });
+          var marker = new google.maps.Marker ({
+            position: location,
+            map: map
+          });
+        }
+      </script>
+
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0IbZZPAv9vTN5mCuUNGN5xeZO9EFPQHc&callback=initMap" type="text/javascript">
+      </script>
+
+    </div>
+
+    <div class="enquiries">
+      <div class="header2">
+        <h3>Contact Us</h3>
+      </div>
+
+      <form class="contact-form" method="post">
+        <input type="text" class="contact-form-text" placeholder="Your Name">
+        <input type="email" class="contact-form-text" placeholder="Your Email">
+        <input type="number" class="contact-form-text" placeholder="Your Phone Number">
+        <textarea class="contact-form-text" placeholder="Your Message"></textarea>
+        <input onclick="pop()" type="button" class="contact-form-btn" value="Send">
+      </form>
+
+      <div id="box">
+
+        <h1>Sent!</h1>
+
+        <a onclick="pop()" class="close">Close</a>
+
+      </div>
+
+      <script type="text/javascript">
+        var c = 0;
+        function pop() {
+          if(c == 0){
+            document.getElementById("box").style.display = "block";
+            c = 1;
+          }else{
+            document.getElementById("box").style.display = "none";
+            c = 0;
+          }
+        }
+      </script>
+
+    </div>
+
+  </body>
+</html>
+<!-- google map api key AIzaSyB0IbZZPAv9vTN5mCuUNGN5xeZO9EFPQHc -->

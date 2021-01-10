@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: lightgrey;
+  font-family: sans-serif;
+  font-weight: 300;
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-top: 25px;
+
+  position: relative;
+}
+
+nav a {
+  color: lightgrey;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: grey;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: grey;
+  position: absolute;
+  top: 0;
+  transition: all ease-in-out 150ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.title {
+  color: lightgrey;
+  font-size: 200%;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-title {
+  background-image: url("contact_image/Phone2.jpg");
+  background-size: cover;
+}
+
+.header1 h3, .header2 h3 {
+  padding: 20px;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.header1, .header2 {
+  background-color: white;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+.enquiries {
+  background-image: url("contact_image/Shore.jpg");
+  background-size: cover;
+
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  padding: 20px 40px;
+  outline: none;
+  transition: 0.5s;
+}
+
+.contact-form-text:focus {
+  box-shadow: 0 0 10px 4px black;
+}
+
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form-btn {
+  float: right;
+  border: 0;
+  background: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.contact-form-btn:hover {
+  background: black;
+  color: white;
+}
+
+#box {
+  width: 500px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 20px black;
+  border-radius: 8px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9999;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+
+#box span {
+  size: 40px;
+  display: block;
+  margin: 20px 0;
+}
+
+.close {
+  font-size: 20px;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.dropbtn {
+
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 7px;
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: black;
+color:white;}
+
+.dropdown-content a:hover::before{
+  width: 0%;
+}
+
+  .dropdown:hover .dropdown-content {display: block;}

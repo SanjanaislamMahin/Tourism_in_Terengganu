@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tour Terengganu</title>
+    <style media="screen">
+      body {
+        margin: 0;
+        background: White;
+        font-family: sans-serif;
+        font-weight: 300;
+      }
+      div{
+        margin-top: : 5px;
+      }
+      h2{
+        margin-left: 15px;
+      }
+      p{
+        margin-left: 15px;
+      }
+      .title{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("et_image/Terengganu_Drawbridge.jpg");
+        height: 550px;
+        max-width: 100%;
+        font-size: 40px;
+        text-align: center;
+        color: white;
+        padding-top: 140px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .sectionImage{
+        height:  300px;
+        display: flex;
+        padding: 20px;
+        color: white;
+      }
+      #PopularPlaces{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("et_image/beach.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #Architecture{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("et_image/masjidKristal.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 50px;
+      }
+      .img{
+        width: 350px;
+        height: 250px;
+        margin: 5px;
+        margin: 0 auto;
+        object-fit: cover;
+      }
+      .desc{
+        float: right;
+        text-align: center;
+      }
+      .RecFood{
+        display: flex;
+        height: 400px;
+        margin: 10px;
+      }
+      #recreational{
+        height: 300px;
+        width: 50%;
+      }
+      #foodFiesta{
+        height: 300px;
+        width: 50%;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      header {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        width: 100%;
+      }
+
+      header::after{
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      .logo{
+        float: left;
+        padding: 10px 0;
+      }
+
+      nav {
+        float: right;
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      nav li {
+        display: inline-block;
+        margin-left: 40px;
+        padding-top: 25px;
+
+        position: relative;
+      }
+
+      nav a {
+        color: lightgrey;
+        text-decoration:  none;
+        text-transform:  uppercase;
+      }
+
+      nav a:hover {
+        color: lightgrey;
+      }
+
+      nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        width: 0%;
+        background-color: lightgrey;
+        position: absolute;
+        top: 0;
+        transition: all ease-in-out 150ms;
+      }
+
+      nav a:hover::before {
+        width: 100%;
+      }
+
+      .dropbtn {
+
+          text-decoration: none;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+        }
+
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: rgba(0,0,0,0.5);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          margin-top: 7px;
+        }
+
+        .dropdown-content a {
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+        .dropdown-content a:hover {background-color: black;
+      color:white;}
+
+      .dropdown-content a:hover::before{
+        width: 0%;
+      }
+
+        .dropdown:hover .dropdown-content {display: block;}
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="container">
+           <img src="et_image/logo.png" width="200px" alt="logo" class="logo">
+          <nav>
+            <ul>
+
+              <li><a href="Home.html">Home</a></li>
+              <li> <div class="dropdown">
+                 <a href="Explore Terengganu.html" class="dropbtn">Explore Terengganu<img style="margin-top: 20px;" src="arrow.ico" alt="">  </a>
+              <div  class="dropdown-content">
+                   <a href="10 Popular Places.html">10 Popular Places</a>
+                   <a href="Recreational.html">Recreational</a>
+                   <a href="FoodFiesta.html">Food Fiesta</a>
+                   <a href="Art and Architecture.html">Art and Architecture</a>
+                 </div>
+               </div> </li>
+              <li><div class="dropdown">
+                 <a href="Accomodation.html" class="dropbtn">Accomodation<img style="margin-top: 20px;" src="arrow.ico" alt="">  </a>
+              <div  class="dropdown-content">
+                   <a href="Budget.html">Budget</a>
+                   <a href="Standard.html">Standard</a>
+                   <a href="Premium.html">Premium</a>
+                 </div>
+               </div></li>
+             <li> <div class="dropdown">
+                <a href="Tips_and_Guide.html" class="dropbtn">Tips and Guide <img style="margin-top: 20px;" src="arrow.ico" alt="">  </a>
+             <div  class="dropdown-content">
+                  <a href="Transportation.html">Transportation</a>
+                  <a href="Maps.html">Maps</a>
+                </div>
+              </div> </li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <div class="title">
+      <h1>Explore <br>Terengganu</h1>
+    </div>
+    <section class="sectionImage" id="PopularPlaces">
+      <div>
+        <a href="10 Popular Places.html">
+          <img class="img" src="et_image/beach - Copy.jpg">
+        </a>
+      </div>
+      <div>
+        <h2>10+ Popular Places</h2>
+        <p>One of the great draws about a visit to Kuala Terengganu
+        is that it offers such diversity <br> As a part of a trip here
+        you can walk around the town and visit pretty heritage buildings
+        and museums, or you spend time mussel picking and squid fishing <br>
+        Here are the Top Places in Terengganu: </p>
+      </div>
+    </section>
+    <section class="RecFood">
+      <div id="recreational" class="desc">
+        <a href="Recreational.html">
+          <img class="img" src="et_image/scuba.png">
+        </a>
+          <h3>Recreational</h3>
+          <p>If you’re looking for a change in scenery, Malaysia has plenty
+            of sights and sounds for you to discover. Here is our top pick of
+            lesser-known destinations worth visiting the next time you’re in town </p>
+      </div>
+      <div id="foodFiesta" class="desc" href="FoodFiesta.html">
+        <a href="FoodFiesta.html">
+          <img class="img" src="et_image/nasi kerabu.jpg">
+        </a>
+        <h3>Food Fiesta</h3>
+        <p>What is your favorite food? In no particular order, here are <strong>5 Terengganu
+          restaurants</strong> and stalls you must try during your stay here and where you can
+          find them. It is definitely worth reading!
+        </p>
+      </div>
+    </section>
+    <section class="sectionImage" id="Architecture" href="Art and Architecture.html">
+      <div>
+        <a href="Art and Architecture.html">
+          <img class="img" src="et_image/tecksoonheritage.jpg">
+        </a>
+      </div>
+      <div>
+        <h2>Arts and Architecture</h2>
+        <p>Vibrant coloured buildings mixed with classic architecture and filled with hidden spots; this could be the best way to describe Terengganu
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

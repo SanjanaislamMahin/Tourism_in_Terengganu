@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: lightgrey;
+  font-family: sans-serif;
+  font-weight: 300;
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-top: 25px;
+
+  position: relative;
+}
+
+nav a {
+  color: lightgrey;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: grey;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: grey;
+  position: absolute;
+  top: 0;
+  transition: all ease-in-out 150ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.title {
+  color: lightgrey;
+  font-size: 200%;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-title {
+  background-image: url("home_image/Beach.jpg");
+  background-size: cover;
+}
+
+.part1, .part3, .part5, .part7 {
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 550px;
+}
+
+.pic3 {
+  float: left;
+  padding: 5px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.pic1 {
+  float: left;
+  padding: 5px;
+  padding-bottom: 15px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.pic2 {
+  float: right;
+  height: 520px;
+  padding: 5px;
+  object-fit: cover;
+}
+
+.part2, .part4, .part6, .part8 {
+  background-color: white;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.part2 a, .part4 a, .part6 a, .part8 a{
+  color: Black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.part2 li {
+  margin-left: 43.5%;
+}
+
+.part4 li {
+  margin-left: 45%;
+}
+
+.part6 li {
+  margin-left: 45%;
+}
+
+.part8 li {
+  margin-left: 47%;
+}
+
+.part2 li, .part4 li, .part6 li, .part8 li {
+  display: inline-block;
+  width: 100%;
+
+  position: relative;
+}
+
+.part2 p, .part4 p, .part6 p, .part8 p{
+  text-align: center;
+}
+
+.dropbtn {
+
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 7px;
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: black;
+color:white;}
+
+.dropdown-content a:hover::before{
+  width: 0%;
+}
+
+  .dropdown:hover .dropdown-content {display: block;}
